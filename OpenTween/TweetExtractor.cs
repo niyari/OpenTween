@@ -189,7 +189,8 @@ namespace OpenTween
                     {
                         Indices = new[] { startPos, endPos },
                         Text = input,
-                        Url = "https://twemoji.maxcdn.com/2/72x72/" + string.Join("-", codepointHex) + ".png",
+                        // TODO: CDN(MaxCDN)の廃止のため一時的に変更。 https://twemoji.maxcdn.com/2/72x72/
+                        Url = "https://abs.twimg.com/emoji/v2/72x72/" + string.Join("-", codepointHex) + ".png",
                     };
                 }
                 else
